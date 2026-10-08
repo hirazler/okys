@@ -1,0 +1,10 @@
+OKYS - Sistem Gereksinimleri (SRS)
+
+1. Projenin Amacı:
+Kütüphanedeki kitapların, kopyaların, kullanıcıların ve ödünç alma işlemlerinin takip edilebildiği nesne yönelimli bir yönetim sistemi geliştirmek.
+
+2. Temel Sınıflar:
+- Kullanici: Sistemdeki üyelerin bilgilerini tutar.
+- Kitap: Kitabın genel künye bilgilerini (ISBN, ad, yazar) barındırır.
+- KitapKopyasi: Kitabın fiziksel kopyalarını ve raf/ödünç durumunu takip eder.
+- OduncKaydi: Hangi kullanıcının hangi kitap kopyasını ne zaman aldığını ve iade tarihini kaydeder.
