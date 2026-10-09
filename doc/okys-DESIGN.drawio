@@ -1,41 +1,12 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36" version="29.6.6">
   <diagram name="OKYS Diyagramlari" id="okys_diag">
-    <mxGraphModel dx="1200" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- CLASS: Kitap -->
-        <mxCell id="kitap_box" value="Kitap&#xd;- isbn: String&#xd;- baslik: String&#xd;- yazar: String&#xd;----------------&#xd;+ getIsbn()&#xd;+ setBaslik()" style="shape=swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;rounded=1;fontSize=14;fontColor=000000;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="220" height="150" as="geometry" />
+        <mxCell id="JI6MPJuyT2ZW_BuXMN_6-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="170" as="geometry" />
         </mxCell>
-
-        <!-- CLASS: KitapKopyasi -->
-        <mxCell id="kopya_box" value="KitapKopyasi&#xd;- kopyaId: int&#xd;- kitap: Kitap&#xd;- durum: String&#xd;----------------&#xd;+ getKopyaId()&#xd;+ getDurum()" style="shape=swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;rounded=1;fontSize=14;fontColor=000000;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="320" y="40" width="220" height="150" as="geometry" />
-        </mxCell>
-
-        <!-- CLASS: Kullanici -->
-        <mxCell id="user_box" value="Kullanici&#xd;- kullaniciId: int&#xd;- adSoyad: String&#xd;- eposta: String&#xd;----------------&#xd;+ getKullaniciId()&#xd;+ getAdSoyad()" style="shape=swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;rounded=1;fontSize=14;fontColor=000000;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="40" y="260" width="220" height="150" as="geometry" />
-        </mxCell>
-
-        <!-- CLASS: OduncKaydi -->
-        <mxCell id="odunc_box" value="OduncKaydi&#xd;- islemId: int&#xd;- kullanici: Kullanici&#xd;- kitapKopyasi: KitapKopyasi&#xd;- alisTarihi: String&#xd;- teslimTarihi: String&#xd;----------------&#xd;+ getIslemId()" style="shape=swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;rounded=1;fontSize=14;fontColor=000000;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="320" y="260" width="240" height="170" as="geometry" />
-        </mxCell>
-
-        <!-- ILISKILER -->
-        <mxCell id="rel1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="kopya_box" target="kitap_box">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel2" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="odunc_box" target="user_box">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel3" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.2;entryX=1;entryY=0.8;" edge="1" parent="1" source="odunc_box" target="kopya_box">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
